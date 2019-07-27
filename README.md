@@ -1,3 +1,5 @@
+# 🚨This fork is a *temporary* update for AndroidX until the origin repo fixing the problem of Jetpack.
+
 # ML Kit Natural Language Plugin
 
 ![Pub](https://img.shields.io/pub/v/firebase_mlkit_language.svg?color=orange)
