@@ -35,6 +35,13 @@ class ModelManager {
     return status;
   }
 
+  /// Downloads specified model
+  Future<String> _downloadModel(String toDownload) async {
+    final String status = await FirebaseLanguage.channel.invokeMethod(
+        'ModelManager#downloadModel', <String, dynamic>{'model': toDownload});
+    return status;
+  }
+
   /// Deletes specified model.
   Future<String> deleteModel(String toDelete) async {
     final String status = await FirebaseLanguage.channel.invokeMethod(
