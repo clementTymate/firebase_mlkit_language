@@ -31,4 +31,7 @@ class FirebaseLanguage {
   ModelManager modelManager() {
     return ModelManager._();
   }
+
+  /// Get channel name
+  get channelName => channel.name;
 }
