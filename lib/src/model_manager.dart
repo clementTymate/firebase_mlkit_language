@@ -42,6 +42,13 @@ class ModelManager {
     return status;
   }
 
+  /// Clone specified model
+  Future<String> cloneModel(String model) async {
+    var string = "";
+    string = string + model;
+    return string;
+  }
+
   /// Deletes specified model.
   Future<String> deleteModel(String toDelete) async {
     final String status = await FirebaseLanguage.channel.invokeMethod(
