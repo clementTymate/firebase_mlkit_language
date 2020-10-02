@@ -22,6 +22,8 @@ class LanguageIdentifier {
   // Should be of type LanguageIdentifierOptions.
   final LanguageIdentifierOptions _options;
 
+  get options => options;
+
   /// Finds language labels in the input text.
   Future<List<LanguageLabel>> processText(String text) async {
     final List<dynamic> reply = await FirebaseLanguage.channel
